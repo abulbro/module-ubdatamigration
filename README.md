@@ -62,11 +62,11 @@ Follow [Installation guide](http://devdocs.magento.com/guides/v2.0/install-gde/i
 + Make write permission for `pub` folder at path `PATH_YOUR_MAGENTO_2/pub`
 
 ### How To Install:
-- Install via Composer: In your terminal window, go to your magento2 webroot folder and run bellow command:
+- Install via Composer: In your terminal window, go to your magento2 webroot folder and run below command:
 + `composer require ubertheme/module-ubdatamigration`
 - Example: 
 ![load module](http://i.prntscr.com/adb0c005b4e141088bd96c1c61d9f7c7.png)
-- Enable the module: In your terminal window run bellow commands:
+- Enable the module: In your terminal window run below commands:
 + `php -f PATH_YOUR_MAGENTO_2/bin/magento module:enable --clear-static-content Ubertheme_Ubdatamigration`
 + `php -f PATH_YOUR_MAGENTO_2/bin/magento setup:upgrade`
 - Examples:
@@ -74,7 +74,7 @@ Follow [Installation guide](http://devdocs.magento.com/guides/v2.0/install-gde/i
 
 ### How To Use:
 
-#### 1 - Follow step by step by UI of this module as bellow screenshots:
+#### 1 - Follow step by step by UI of this module as below screenshots:
 ![Step 1](http://i.imgur.com/aRkl3jJ.png)
 
 ![Step 2](http://i.imgur.com/LzVdz8o.png)
@@ -94,7 +94,7 @@ Follow [Installation guide](http://devdocs.magento.com/guides/v2.0/install-gde/i
 ![Step 9](http://i.imgur.com/LwG3FwA.png)
 
 #### 2 - Finish (_required_)
-**To finish the data migration from Magento 1 to Magento 2, you have to do some tasks bellow:**
+**To finish the data migration from Magento 1 to Magento 2, you have to do some tasks below:**
 + Copy media files
     - Copy the folder at PATH_YOUR_MAGENTO_1\media\catalog and paste replace to PATH_YOUR_MAGENTO_2\pub\media\
     - Copy the folder at PATH_YOUR_MAGENTO_1\media\downloadable and paste replace to PATH_YOUR_MAGENTO_2\pub\media\
@@ -104,15 +104,15 @@ Follow [Installation guide](http://devdocs.magento.com/guides/v2.0/install-gde/i
     In backend of your Magento 2 go to Stores/Attributes/Attribute menu navigation. 
     Open the Attribute Set, edit information of it if needed and click the save button
 
-+ Re-Index the data: In your terminal window run bellow command:
++ Re-Index the data: In your terminal window run below command:
     `php -f PATH_YOUR_MAGENTO_2/bin/magento indexer:reindex`
 ![reindex data](http://i.imgur.com/0rds1GB.png)
 
-+ Clean Magento 2: In your terminal window run bellow command:
++ Clean Magento 2: In your terminal window run below command:
     `php -f PATH_YOUR_MAGENTO_2/bin/magento cache:flush`
 ![flush cache](http://i.imgur.com/pKSs0Eh.png)
 
-+ Upgrade Password Hash (__This is optional task for more security__): In your terminal window run bellow command
++ Upgrade Password Hash (__This is optional task for more security__): In your terminal window run below command
     `php -f PATH_YOUR_MAGENTO_2/bin/magento customer:hash:upgrade`
 ![upgrade customer password_hash](http://i.imgur.com/wSkhljs.png)
 
